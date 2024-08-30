@@ -79,6 +79,7 @@ function App() {
           <div className="Chat_Container">
             {/* <h1>{room}</h1> */}
             <div className="Messages">
+              <div className="Room_Name">{room}</div>
               {messageList.map((value, key) => {
                 return (
                   <div
