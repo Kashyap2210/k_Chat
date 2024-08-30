@@ -2,23 +2,8 @@ import { useEffect, useState } from "react";
 import "./App.css";
 import io from "socket.io-client";
 
-useEffect(() => {
-  const CONNECTION_PORT =
-    window.location.hostname === "localhost"
-      ? "http://localhost:3000"
-      : import.meta.env.VITE_MY_MACHINE_IP_ADDRESS; // Replace with your machine's IP if different
-
-  socket = io(CONNECTION_PORT);
-
-  socket.on("recieve_message", (data) => {
-    console.log("Received message:", data);
-    setMessageList((prevList) => [...prevList, data]);
-  });
-
-  return () => {
-    socket.disconnect();
-  };
-}, []);
+let socket;
+const CONNECTION_PORT = "localhost:3000";
 
 function App() {
   // States that exists before login
