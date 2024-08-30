@@ -1,0 +1,187 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+  font-family: "Roboto", sans-serif;
+}
+
+.Grand_Container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  /* gap: 3rem; */
+  height: 100vh;
+  background-color: rgb(15, 10, 10);
+  color: rgb(18, 218, 48);
+}
+
+.Grand_Container .Main_Heading {
+  font-size: 3rem;
+  padding-top: 2rem;
+}
+
+.App {
+  background-color: rgb(15, 10, 10);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logIn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 3rem;
+  padding: 4rem;
+  background-color: rgb(36, 33, 33);
+}
+
+.inputs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.inputs input {
+  padding: 1rem;
+  width: 15rem;
+  border: none;
+  border-radius: 0.3rem;
+  font-size: 1rem;
+  outline: none;
+}
+
+.inputs:focus {
+  outline: none;
+  border: none;
+}
+
+.button_div {
+  width: 100%;
+}
+
+.logIn .Button {
+  padding: 1rem;
+  height: 3rem;
+  width: 100%;
+  border: none;
+  border-radius: 0.3rem;
+  font-size: 1rem;
+}
+
+.logIn .Button:hover {
+  background-color: rgb(243, 191, 191);
+  transition: 0.2s all ease-in-out;
+}
+
+.Chat_Container {
+  background-color: rgb(36, 33, 33);
+  height: 20rem;
+  width: 30rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: column;
+  font-size: 1rem;
+  color: aliceblue;
+  padding: 1rem;
+}
+
+.Messages {
+  width: 100%;
+  overflow-y: auto;
+}
+
+.Messages::-webkit-scrollbar {
+  display: none; /* For Chrome, Safari, and Opera */
+}
+
+.MessagesInputs {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  width: 100%;
+  gap: 0.1rem;
+}
+
+.MessagesInputs input {
+  flex: 80%;
+  height: 3rem;
+  border: none;
+  padding: 0;
+  font-size: 1rem;
+  padding-left: 1rem;
+  border-top-left-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+}
+
+.MessagesInputs input:focus {
+  outline: none;
+  border: none;
+}
+
+.MessagesInputs button {
+  flex: 20%;
+  height: 3rem;
+  border: none;
+  font-size: 1rem;
+  border-top-right-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+}
+
+.MessagesInputs button:hover {
+  background-color: rgb(166, 144, 144);
+  transition: 0.2s all ease-in-out;
+  cursor: pointer;
+}
+
+.messageContainer {
+  height: auto;
+}
+
+.messageContainer.you {
+  font-size: 0.8rem;
+  /* height: 2.4rem; */
+  width: 10rem;
+  background-color: darkgray;
+  padding: 0.2rem;
+  border-radius: 0.5rem;
+  color: black;
+  font-size: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.messageContainer.other {
+  font-size: 0.8rem;
+  /* height: 2.4rem; */
+  width: 10rem;
+  margin-left: 62.5%;
+  background-color: darkgray;
+  padding: 0.2rem;
+  border-radius: 0.5rem;
+  color: black;
+  font-size: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.messageContainer .messageAuthor {
+  font-size: 0.8rem;
+  color: rgb(161, 16, 0);
+  text-decoration: underline;
+  font-weight: 900;
+}
+
+.messageContainer .message {
+  margin-top: 0.2rem;
+}
